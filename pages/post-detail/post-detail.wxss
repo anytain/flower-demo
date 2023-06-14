@@ -1,1 +1,61 @@
-/* pages/post-detail/post-detail.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.head-image{
+  width: 100%;
+  height: 460rpx;
+}
+.author-date{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+.avatar{
+  width: 64rpx;
+  height: 64rpx;
+  vertical-align: middle;
+
+}
+.author{
+  font-size: 30rpx;
+  font-weight: 300;
+  margin-left: 20rpx;
+}
+.const-text{
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 20rpx;
+}
+.date{
+  font-size: 24rpx;
+  margin-left: 30rpx;
+  color: #999;
+}
+.title{
+  font-size: 36rpx;
+  font-weight: 700;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+  letter-spacing: 2px;
+  color: #4b556c;
+}
+.tool{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.horizon{
+  width: 660rpx;
+  height: 1px;
+  background-color: #999;
+  position: absolute;
+}
+
+.circle-img{
+  width: 90rpx;
+  height: 90rpx;
+
+}

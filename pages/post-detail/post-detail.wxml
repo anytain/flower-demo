@@ -1,16 +1,19 @@
 <!--pages/post-detail/post-detail.wxml-->
 <view class="container">
-  <image src="/images/bestplayers.png"></image>
-  <view>
-    <image src=""></image>
-    <text></text>
-    <text></text>
-    <text></text>
+  <image  class="head-image" src="/images/bestplayers.png"></image>
+  <view class="author-date">
+    <image class="avatar" src="/images/avator/kk.png"></image>
+    <text class="author">vivi</text>
+    <text class="const-text">发表于</text>
+    <text class="date">16小时前</text>
   </view>
-  <text></text>
-  <view>
-    <image></image>
-    <image></image>
+  <text class="title">LPL夏季赛最佳阵容</text>
+  <view class="tool">
+  <view class="circle">
+    <image  class="circle-img" src="/images/icon/share.png"></image>
+    <image  class="circle-img" src="/images/icon/collection.png"></image>
   </view>
-  <text></text>
+    <view class="horizon"></view>
+  </view>
+  <text>8月9号，LPL常规赛收官之战结束</text>
 </view>
