@@ -9,6 +9,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/post-detail/post-detail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

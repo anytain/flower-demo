@@ -1,0 +1,16 @@
+<!--pages/post-detail/post-detail.wxml-->
+<view class="container">
+  <image src="/images/bestplayers.png"></image>
+  <view>
+    <image src=""></image>
+    <text></text>
+    <text></text>
+    <text></text>
+  </view>
+  <text></text>
+  <view>
+    <image></image>
+    <image></image>
+  </view>
+  <text></text>
+</view>

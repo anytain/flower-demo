@@ -1,6 +1,4 @@
-// pages/posts/posts.js
-// var postData = require("../../data/data.js")
-import { postList } from '../../data/data.js'
+// pages/post-detail/post-detail.js
 Page({
 
   /**
@@ -8,23 +6,13 @@ Page({
    */
   data: {
 
-
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onGoToDeatil(event){
-      wx.navigateTo({
-        url: '/pages/post-detail/post-detail',
-      })
-  },
   onLoad(options) {
 
-    this.setData({
-      postList
-    }
-    )
   },
 
   /**
