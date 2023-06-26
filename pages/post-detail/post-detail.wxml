@@ -10,10 +10,11 @@
   <text class="title">LPL夏季赛最佳阵容</text>
   <view class="tool">
   <view class="circle">
-    <image  class="circle-img" src="/images/icon/share.png"></image>
-    <image  class="circle-img" src="/images/icon/collection.png"></image>
+    <image  class="share-img"  src="/images/icon/collection.png"></image>
+
+    <image class=""   src="/images/icon/share.png"></image>
   </view>
     <view class="horizon"></view>
   </view>
-  <text>8月9号，LPL常规赛收官之战结束</text>
+  <text class="detail">8月9号，LPL常规赛收官之战结束</text>
 </view>

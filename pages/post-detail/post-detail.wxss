@@ -43,19 +43,31 @@
 }
 .tool{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
  align-items: center;
- justify-content: center;
+ width: 660rpx;
+ justify-content: flex-end;
 }
 .horizon{
   width: 660rpx;
   height: 1px;
   background-color: #999;
   position: absolute;
+  z-index: ;
 }
-
-.circle-img{
+.circle image{
   width: 90rpx;
   height: 90rpx;
 
+}
+.share-img{
+  margin-right: 30rpx;
+}
+.detail{
+  color:#666;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  margin-right: 30rpx;
+  line-height: 44rpx;
+  letter-spacing: 2px;
 }
