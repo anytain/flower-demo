@@ -13,7 +13,7 @@
         {
           "name": "",
           "pathName": "pages/post-detail/post-detail",
-          "query": "",
+          "query": "pid=0",
           "launchMode": "default",
           "scene": null
         }

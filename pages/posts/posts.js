@@ -15,12 +15,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onGoToDeatil(event){
+      console.log(event);
+      const pid = event.currentTarget.dataset.id;
       wx.navigateTo({
-        url: '/pages/post-detail/post-detail',
+        url: '/pages/post-detail/post-detail?pid=' + pid,
       })
   },
   onLoad(options) {
-
+    wx.setStorageSync('flag', true)
     this.setData({
       postList
     }
