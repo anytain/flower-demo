@@ -1,6 +1,9 @@
 <!--pages/post-detail/post-detail.wxml-->
 <view class="container">
   <image  class="head-image" src="{{postData.headImgSrc}}"></image>
+  <image wx:if="{{!isPlaying}}" class="audio" bindtap="onMusicStart" src="/images/music/music-start.png"></image>
+  <image  wx:else bindtap="onMusicStop" class="audio"  src="/images/music/music-stop.png"></image>
+
   <view class="author-date">
     <image class="avatar" src="{{postData.avatar}}"></image>
     <text class="author">{{postData.author}}</text>
@@ -13,7 +16,7 @@
     <image wx:if="{{collected}}" bindtap="onCollect" class="share-img"  src="/images/icon/collection.png"></image>
     <image wx:else="" bindtap="onCollect" class="share-img"  src="/images/icon/collection-anti.png"></image>
 
-    <image class=""   src="/images/icon/share.png"></image>
+    <image bindtap="onShare" class=""   src="/images/icon/share.png"></image>
   </view>
     <view class="horizon"></view>
   </view>

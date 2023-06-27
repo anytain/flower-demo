@@ -72,3 +72,12 @@
   line-height: 44rpx;
   letter-spacing: 2px;
 }
+.audio{
+  width: 102rpx;
+  height: 110rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -51rpx;
+  top: 185rpx;
+  opacity: 0.6;
+}
