@@ -1,7 +1,6 @@
 // pages/post-detail/post-detail.js
 import { postList } from '../../data/data.js'
 const app = getApp()
-console.log(app)
 Page({
 
   /**
@@ -22,8 +21,20 @@ Page({
    */
   onLoad(options) {
     const postData = postList[options.pid];
-    this.data._pid = options.pid
-    const postsCollected = wx.getStorageSync('posts_collected');
+    this.data._pid = options.pid;
+    let arrayId = options.pid;
+    console.log(this.data._pid)
+    let postsCollected = wx.getStorageSync('posts_collected');
+    if(postsCollected==''){
+      console.log("null")
+      const postCollectedArr = {};
+      postCollectedArr[this.data._pid]=false;
+      console.log(postCollectedArr);
+      wx.setStorageSync('posts_collected',postCollectedArr);
+      postsCollected = wx.getStorageSync('posts_collected');
+    }
+
+    console.log(postsCollected)
     this.data._postsCollected = postsCollected;
     let collected = postsCollected[this.data._pid]
     if (collected === undefined) {
@@ -76,16 +87,18 @@ Page({
     })
   },
   async onCollect(event) {
+    console.log(this.data._pid);
     const postsCollected = this.data._postsCollected;
-    wx.getStorageSync('posts_collected');
-    postsCollected[this.data._pid] = !this.data.collected
-    let collectedNew = !this.data.collected;
+    console.log(postsCollected);
+    console.log(!this.data.collected);
+    wx.getStorageSync('key')
+    postsCollected[this.data._pid] =!this.data.collected;
     this.setData({
       collected: !this.data.collected
     })
     wx.setStorageSync('posts_collected', postsCollected)
     wx.showToast({
-      title: collectedNew ? '收藏成功' : '取消收藏',
+      title: this.data.collected ? '收藏成功' : '取消收藏',
       duration: 3000
     })
   },

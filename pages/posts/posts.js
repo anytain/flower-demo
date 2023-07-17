@@ -17,12 +17,12 @@ Page({
   onGoToDeatil(event){
       console.log(event);
       const pid = event.currentTarget.dataset.id;
+      console.log(pid);
       wx.navigateTo({
         url: '/pages/post-detail/post-detail?pid=' + pid,
       })
   },
   onLoad(options) {
-    wx.setStorageSync('flag', true)
     this.setData({
       postList
     }
