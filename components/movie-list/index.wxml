@@ -1,0 +1,12 @@
+<view class="container f-class">
+  <view class="title-container">
+    <text>{{title}}</text>
+    <text class="movie-text">更多>></text>
+  </view>
+  <view class="movie-container">
+    <movie />
+    <movie />
+    <movie />
+  </view>
+
+</view>

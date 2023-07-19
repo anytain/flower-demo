@@ -16,8 +16,18 @@
           "query": "pid=0",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/movies/movies",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
+  },
+  "setting": {
+    "urlCheck": false
   }
 }

@@ -1,30 +1,24 @@
-// pages/posts/posts.js
-// var postData = require("../../data/data.js")
-import { postList } from '../../data/data.js'
+// pages/movies/movies.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-   
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onGoToDeatil(event){
-      const pid = event.currentTarget.dataset.id;
-      console.log(pid);
-      wx.navigateTo({
-        url: '/pages/post-detail/post-detail?pid=' + pid,
-      })
-  },
   onLoad(options) {
-    this.setData({
-      postList
-    }
-    )
+      wx.request({
+        url: 'http://t.talelin.com/v2/movie/in_theaters',
+        success(res){
+            console.log(res);
+        }
+      })
+      //API地址
   },
 
   /**

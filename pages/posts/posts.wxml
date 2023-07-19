@@ -1,31 +1,18 @@
 <view>
   <swiper circular indicator-dots="{{false}}" autoplay="{{true}}" interval="{{2000}}">
     <swiper-item>
-      <image src="/images/bestplayers.png"></image>
+      <image bindtap="onGoToDeatil" data-id='3' src="/images/bestplayers.png"></image>
     </swiper-item>
     <swiper-item>
-      <image src="/images/lpl.png"></image>
+      <image bindtap="onGoToDeatil"  data-id='0' src="/images/lpl.png"></image>
     </swiper-item>
     <swiper-item>
-      <image src="/images/jumpfly.png"></image>
+      <image bindtap="onGoToDeatil"   data-id='4' src="/images/jumpfly.png"></image>
     </swiper-item>
   </swiper>
+ 
   <block wx:for="{{postList}}" wx:key="postId">
-    <view  data-id="{{item.postId}}" bind:tap="onGoToDeatil" class="post-container">
-      <view class="post-author-date">
-        <image catch:tap="onMaxImage" class="pst-author" src="{{item.avatar}}"> </image>
-        <text class="post-date">{{item.date}}</text>
-      </view>
-      <text class="post-title">{{item.title}}</text>
-      <image class="post-image" src="{{item.imgSrc}}"></image>
-      <text class="post-content">{{item.content}}</text>
-      <view class="post-like">
-        <l-icon class="post-like-image" size="28" color="#666" name="favor"></l-icon>
-        <text class="post-like-font">{{item.collection}}</text>
-        <l-icon class="post-like-image" size="32" color="#666" name="eye"></l-icon>
-        <text class="post-like-font">{{item.reading}}</text>
-      </view>
-    </view>
+    <post res="{{item}}" />
   </block>
 
 

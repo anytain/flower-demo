@@ -1,0 +1,16 @@
+
+<view  data-id="{{res.postId}}" bind:tap="onGoToDeatil" class="post-container">
+      <view class="post-author-date">
+        <image catch:tap="onMaxImage" class="pst-author" src="{{res.avatar}}"> </image>
+        <text class="post-date">{{res.date}}</text>
+      </view>
+      <text class="post-title">{{res.title}}</text>
+      <image class="post-image" src="{{res.imgSrc}}"></image>
+      <text class="post-content">{{res.content}}</text>
+      <view class="post-like">
+        <l-icon class="post-like-image" size="28" color="#666" name="favor"></l-icon>
+        <text class="post-like-font">{{res.collection}}</text>
+        <l-icon class="post-like-image" size="32" color="#666" name="eye"></l-icon>
+        <text class="post-like-font">{{res.reading}}</text>
+      </view>
+    </view>

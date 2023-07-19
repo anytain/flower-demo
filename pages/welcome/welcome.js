@@ -9,9 +9,8 @@ Page({
   },
 
   onTab : function(){
-      // console.log("123")
-      wx.navigateTo({
-        url: '/pages/posts/posts',
+      wx.switchTab({
+        url: '/pages/posts/posts'
       })
   },
   /**
