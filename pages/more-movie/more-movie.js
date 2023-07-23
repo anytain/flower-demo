@@ -1,18 +1,31 @@
-// pages/more-movie/more-movie.js
+const app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    movies:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    const type = options.type
+    wx.request({
+      url: app.gBaseUrl+type,
+      data:{
+        start:0,
+        count:11
+      },
+      success:(res)=>{
+          this.setData({
+            movies : res.data.subjects
+          })
+      }
+    })
   },
 
   /**

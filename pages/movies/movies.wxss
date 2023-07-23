@@ -4,3 +4,18 @@
 page{
   background-color: #f2f2f2;
 }
+.ex-search{
+  height: 90rpx !important;
+}
+.search-container{
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40rpx 30rpx;
+  justify-content: space-between;
+}
+
+.search-container::after{
+  content: '';
+  width: 200rpx;
+}

@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "movie-list":"/components/movie-list/index"
+    "movie-list":"/components/movie-list/index",
+    "l-search-bar":"/miniprogram_npm/lin-ui/search-bar/index"
   }
 }

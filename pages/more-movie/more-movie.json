@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "movie":"/components/movie/index"
+  }
 }
