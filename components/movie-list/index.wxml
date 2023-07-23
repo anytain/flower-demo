@@ -4,9 +4,9 @@
     <text class="movie-text">更多>></text>
   </view>
   <view class="movie-container">
-    <movie />
-    <movie />
-    <movie />
+  <block wx:for="{{movies}}" wx:key="index">
+    <movie movie="{{item}}" />
+  </block>
   </view>
 
 </view>

@@ -5,7 +5,8 @@ Component({
    */
   externalClasses:['f-class'],
   properties: {
-    title:String
+    title:String,
+    movies:Array
   },
 
   /**

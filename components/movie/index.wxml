@@ -1,9 +1,9 @@
 <view class="container">
-  <image class="poster" src="/images/lpl.png"></image>
-  <text class="title">盗梦空间</text>
+  <image class="poster" src="{{movie.images.large}}"></image>
+  <text class="title">{{movie.title}}</text>
   <view class="rate-container">
-    <l-rate disabled="{{true}}" size="23" score="3" />
-    <text class="score">3.0</text>
+    <l-rate disabled="{{true}}" size="23" score="{{movie.rating.stars/10}}" />
+    <text class="score">{{movie.rating.average}}</text>
   </view>
 
 </view>
