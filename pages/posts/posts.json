@@ -3,5 +3,6 @@
     "l-icon":"/miniprogram_npm/lin-ui/icon/index",
     "post":"/components/post/index"
   },
-  "navigationBarBackgroundColor": "#C22A1E"
+  "navigationBarBackgroundColor": "#C22A1E",
+  "navigationBarTitleText": "文与字"
 }
