@@ -12,7 +12,7 @@
   </swiper>
  
   <block wx:for="{{postList}}" wx:key="postId">
-    <post res="{{item}}" />
+    <post bind:posttap = "onGoToDeatil" res="{{item}}" />
   </block>
 
 

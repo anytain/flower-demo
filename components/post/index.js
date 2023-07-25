@@ -8,7 +8,7 @@ Component({
     //   type:String,
     //   value:'123' 
     // }
-    res:Object
+    res: Object
   },
 
   /**
@@ -22,12 +22,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    onGoToDeatil(event){
-      const pid = event.currentTarget.dataset.id;
-      console.log(pid);
-      wx.navigateTo({
-        url: '/pages/post-detail/post-detail?pid=' + pid,
-      })
-  },
+    onTop(event) {
+      const pid = this.properties.res.postId
+     this.triggerEvent('posttap',{
+       pid
+     });
+    },
   }
 })

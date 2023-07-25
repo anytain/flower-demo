@@ -1,5 +1,5 @@
 
-<view  data-id="{{res.postId}}" bind:tap="onGoToDeatil" class="post-container">
+<view  bind:tap="onTop" class="post-container">
       <view class="post-author-date">
         <image catch:tap="onMaxImage" class="pst-author" src="{{res.avatar}}"> </image>
         <text class="post-date">{{res.date}}</text>

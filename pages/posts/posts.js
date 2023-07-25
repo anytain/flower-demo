@@ -14,7 +14,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onGoToDeatil(event){
-      const pid = event.currentTarget.dataset.id;
+      const pid =  event.currentTarget.dataset.dataId |  event.detail.pid;
       console.log(pid);
       wx.navigateTo({
         url: '/pages/post-detail/post-detail?pid=' + pid,
